@@ -9,6 +9,14 @@
 	<name>project_3 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<repositories>
+		<repository>
+			<id>jaspersoft-repo</id>
+			<url>https://jaspersoft.jfrog.io/artifactory/third-party-ce-artifacts/</url>
+		</repository>
+	</repositories>
+
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -84,24 +92,15 @@
 			<artifactId>jasperreports</artifactId>
 			<version>6.13.0</version>
 		</dependency>
+
 		<dependency>
-<<<<<<< HEAD
 			<groupId>com.lowagie</groupId>
 			<artifactId>itext</artifactId>
-			<version>2.1.7</version> <!-- No `.js7` -->
+			<version>2.1.7.js7</version>
 		</dependency>
 
-=======
-                        <groupId>com.lowagie</groupId>
-                        <artifactId>itext</artifactId>
-                        <version>2.1.7</version> <!-- No `.js7` -->
-               </dependency>
 
-
- 
->>>>>>> 2c24611e874d3c3d028143eee168b6024bb9ce4d
 	</dependencies>
-
 	<build>
 		<finalName>project_3</finalName>
 	</build>
