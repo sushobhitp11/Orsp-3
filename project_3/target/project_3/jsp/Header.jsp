@@ -107,6 +107,9 @@
 							class="fa fa-user-friends"></i>User List</a>
 					</div></li>
 
+
+
+
 				<li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -206,7 +209,7 @@
 						</a>
 					</div></li>
 
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
+				<%-- <li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false"> <font style="color: white;">Product
@@ -220,6 +223,32 @@
 							List</a>
 					</div></li>
 
+
+				<li class="nav-item dropdown" style="padding-left: 5px;"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> <font style="color: white;">Stock
+							Purchase</font>
+				</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="<%=ORSView.STOCK_PURCHASE_CTL%>"><i
+							class="fa fa-user-circle"></i>Add Stock Purchase</a> <a
+							class="dropdown-item" href="<%=ORSView.STOCK_PURCHASE_LIST_CTL%>"><i
+							class="fa fa-user-friends"></i>Stock Purchase List</a>
+					</div></li>
+
+				<li class="nav-item dropdown" style="padding-left: 5px;"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> <font style="color: white;">Employee
+					</font>
+				</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="<%=ORSView.EMPLOYEE_CTL%>"><i
+							class="fa fa-user-circle"></i>Add Employee</a> <a
+							class="dropdown-item" href="<%=ORSView.EMPLOYEE_LIST_CTL%>"><i
+							class="fa fa-user-friends"></i>Employee List</a>
+					</div></li> --%>
 				<%
 					}
 					}

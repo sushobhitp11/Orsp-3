@@ -143,7 +143,7 @@
 
 				&emsp;
 
-				<div class="col-sm-2">
+				<div class="col-sm-1">
 					<input type="text" id="datepicker2" name="dob"
 						placeholder="Enter DOB" class="form-control"
 						value="<%=ServletUtility.getParameter("dob", request)%>">

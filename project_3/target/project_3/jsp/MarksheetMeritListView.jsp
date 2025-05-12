@@ -111,7 +111,7 @@
 				</a>
 			</div>
 			<div style="margin-bottom: 20px;" class="table-responsive">
-				<table class="table table-dark  table-hover">
+				<table class="table table-dark table-bordered table-hover"> 
 					<thead>
 						<tr style="background-color: #8C8C8C;">
 

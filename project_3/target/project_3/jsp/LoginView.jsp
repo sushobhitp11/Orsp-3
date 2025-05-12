@@ -71,7 +71,7 @@ i.css {
 				<!-- Grid column -->
 				<div class="col-md-4 "></div>
 				<div class="col-md-4">
-					<div class="card input-group-addon grad	">
+					<div class="card  input-group-addon   grad 	">
 						<div class="card-body">
 
 							<h3 class="text-center text-dark"><b>Login</b></h3>
@@ -124,8 +124,8 @@ i.css {
 								style="color: red;">*</span></span> </br>
 
 							<div class="col-sm-12">
-								<div class="input-group">
-									<div class="input-group-prepend">
+								  <div class="input-group"> 
+									 <div class="input-group-prepend">  
 										<div class="input-group-text">
 											<i class="fa fa-envelope grey-text" style="font-size: 1rem;"></i>
 										</div>

@@ -92,9 +92,9 @@ public class UserModelHibImp implements UserModelInt {
 		// TODO Auto-generated method stub
 		Session session = null;
 		Transaction tx = null;
-		UserDTO exesistDto = findByLogin(dto.getLogin());
+		UserDTO existDto = findByLogin(dto.getLogin());
 
-		if (exesistDto != null && exesistDto.getId() != dto.getId()){
+		if (existDto != null && existDto.getId() != dto.getId()){
 			throw new DuplicateRecordException("Login id already exist");
 		}
 
@@ -253,6 +253,9 @@ public class UserModelHibImp implements UserModelInt {
 		UserDTO dto = null;
 		session = HibDataSource.getSession();
 		Query q = session.createQuery("from UserDTO where login=? and password=?");
+		
+		/* q.setCacheable(true); */
+		
 		q.setString(0, login);
 		q.setString(1, password);
 		List list = q.list();

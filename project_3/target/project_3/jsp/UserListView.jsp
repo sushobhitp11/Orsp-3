@@ -1,4 +1,5 @@
 
+<%@page import="java.util.HashMap"%>
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.model.ModelFactory"%>
@@ -21,13 +22,12 @@
 <style>
 .hm {
 	background-image: url('<%=ORSView.APP_CONTEXT%>/img/list2.jpg');
-	
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 85px;
-	
-    /*  background-size: 100%; */
+
+	/*  background-size: 100%; */
 }
 
 .p1 {
@@ -42,6 +42,7 @@
 </style>
 </head>
 <%@include file="Header.jsp"%>
+<%@include file="calendar.jsp"%>
 <body class="hm">
 	<div>
 		<form class="pb-5" action="<%=ORSView.USER_LIST_CTL%>" method="post">
@@ -108,20 +109,47 @@
 
 			<div class="row">
 
-				<div class="col-sm-2"></div>
+
 				<div class="col-sm-2">
 					<input type="text" name="firstName" placeholder="Enter FirstName"
 						class="form-control"
 						value="<%=ServletUtility.getParameter("firstName", request)%>">
 				</div>
+
 				&emsp;
 				<div class="col-sm-2">
 					<input type="text" name="login" placeholder="Enter Login Id"
 						class="form-control"
 						value="<%=ServletUtility.getParameter("login", request)%>">
 				</div>
+
 				&emsp;
-				<div class="col-sm-3"><%=HTMLUtility.getList("Role", String.valueOf(dto.getRoleId()), list1)%></div>
+
+
+				<div class="col-sm-2">
+					<%
+						HashMap map = new HashMap();
+							map.put("Male", "Male");
+							map.put("Female", "Female");
+
+							String htmlList = HTMLUtility.getList("gender", dto.getGender(), map);
+					%>
+					<%=htmlList%>
+					<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("gender", request)%></font></br>
+				</div>
+
+				&emsp;
+				<div class="col-sm-2"><%=HTMLUtility.getList("Role", String.valueOf(dto.getRoleId()), list1)%></div>
+
+				&emsp;
+
+				<div class="col-sm-1">
+					<input type="text" id="datepicker2" name="dob"
+						placeholder="Enter DOB" class="form-control"
+						value="<%=ServletUtility.getParameter("dob", request)%>">
+				</div>
+
+				&emsp;
 
 				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"
@@ -130,6 +158,8 @@
 						type="submit" class="btn btn-dark btn-md" style="font-size: 15px"
 						name="operation" value="<%=UserListCtl.OP_RESET%>">
 				</div>
+
+
 				<div class="col-sm-1"></div>
 			</div>
 

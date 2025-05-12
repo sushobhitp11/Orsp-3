@@ -53,11 +53,11 @@ i.css {
 
 								if (dto.getId() != null) {
 							%>
-							<h3 class="text-center text-primary">Update College</h3>
+							<h3 class="text-center text-primary">Update Product</h3>
 							<%
 								} else {
 							%>
-							<h3 class="text-center text-primary">Add College</h3>
+							<h3 class="text-center text-primary">Add Product</h3>
 							<%
 								}
 							%>
