@@ -9,6 +9,16 @@
 	<name>project_3 Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.lowagie</groupId>
+				<artifactId>itext</artifactId>
+				<version>2.1.7</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -84,11 +94,14 @@
 			<artifactId>jasperreports</artifactId>
 			<version>6.13.0</version>
 		</dependency>
+		<dependencies>
+		<!-- (your other dependencies remain the same) -->
+
 		<dependency>
-    <groupId>com.lowagie</groupId>
-    <artifactId>itext</artifactId>
-    <version>2.1.7</version>
-</dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+		</dependency>
+	</dependencies>
 
 	</dependencies>
 
