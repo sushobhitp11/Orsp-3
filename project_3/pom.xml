@@ -86,6 +86,17 @@
 		</dependency>
  
 	</dependencies>
+	<repositories>
+    <repository>
+        <id>jaspersoft-third-party</id>
+        <url>https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts</url>
+    </repository>
+    <repository>
+        <id>jr-ce-releases</id>
+        <url>https://jaspersoft.jfrog.io/jaspersoft/jr-ce-releases</url>
+    </repository>
+</repositories>
+
 	<build>
 		<finalName>project_3</finalName>
 	</build>
