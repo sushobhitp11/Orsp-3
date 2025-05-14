@@ -21,7 +21,7 @@
 
 		<!-- <property name="hibernate.cache.provider_class"> org.hibernate.cache.EhCacheProvider</property> -->
 		<property name="hibernate.cache.use_second_level_cache"> true</property>
-		
+
 		<!-- <property name="hibernate.cache.use_querry_cache">true</property> -->
 
 		<!-- hibernate DCP c3p0 Configuration -->
@@ -53,8 +53,10 @@
 
 		<mapping
 			resource="in/co/rays/project_3/hbm/StockPurchaseDTO.hbm.xml" />
-			
-			<mapping
+
+		<mapping
 			resource="in/co/rays/project_3/hbm/EmployeeDTO.hbm.xml" />
+
+		<mapping resource="in/co/rays/project_3/hbm/CartDTO.hbm.xml"></mapping>
 	</session-factory>
 </hibernate-configuration>

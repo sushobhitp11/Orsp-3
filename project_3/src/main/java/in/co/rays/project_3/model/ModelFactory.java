@@ -205,4 +205,17 @@ public final class ModelFactory {
 
 		return facultyModel;
 	}
+	
+	public CartModelInt getCartModel() {
+		CartModelInt cartModel = (CartModelInt) modelCache.get("cartModel");
+		if (cartModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				cartModel = new CartModelHibImpl();
+			}
+			
+		}
+		modelCache.put("cartModel", cartModel);
+
+		return cartModel;
+	}
 }

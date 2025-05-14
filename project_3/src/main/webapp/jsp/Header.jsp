@@ -94,6 +94,18 @@
 				<%
 					} else if (userDto.getRoleId() == RoleDTO.ADMIN) {
 				%>
+				
+				<li class="nav-item dropdown" style="padding-left: 5px;"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> <font style="color: White;">Cart</font>
+				</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="<%=ORSView.CART_CTL%>"><i
+							class="fas fa-user"></i>Add Cart</a> <a class="dropdown-item"
+							href="<%=ORSView.CART_LIST_CTL%>"><i
+							class="fas fa-user-friends"></i>Cart List</a>
+					</div></li> 
 
 				<li class="nav-item dropdown" style="padding-left: 5px;"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
